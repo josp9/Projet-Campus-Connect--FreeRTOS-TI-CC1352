@@ -1,0 +1,14 @@
+"./cJSON.o"
+"./gpiointerrupt.o"
+"./syscfg/ti_devices_config.o"
+"./syscfg/ti_drivers_config.o"
+"./syscfg/ti_freertos_config.o"
+"./syscfg/ti_freertos_portable_config.o"
+"./main_freertos.o"
+-Wl,-T"../cc13x2_cc26x2_freertos.lds"
+-l:ti_utils_build_linker.cmd.genlibs
+-l:"ti/devices/cc13x2_cc26x2/driverlib/bin/gcc/driverlib.lib"
+-lgcc
+-lc
+-lm
+-lnosys
